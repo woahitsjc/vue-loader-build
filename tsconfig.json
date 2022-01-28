@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "sourceMap": true,
+    "target": "es6",
+    "outDir": "./dist",
+    "importHelpers": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "types": [
+      "reflect-metadata",
+      "jest",
+      "node"
+    ],
+    "noImplicitOverride": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "plugins": [
+      {
+        "name": "ts-vue-plugin"
+      }
+    ],
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "paths": {
+      "@common/*": [
+        "src/common/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "global.d.ts",
+    "src/jest.setup.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
